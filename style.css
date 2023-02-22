@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(228, 226, 226);
+}
+.calculator{
+    position: relative;
+    background-color: rgb(195, 122, 122);
+    -webkit-box-shadow: inset 0px 0px 11px 7px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 11px 7px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 11px 7px rgba(0,0,0,0.3);
+    
+    padding: 20px;
+    border-radius: 20px;
+    height: 370px;
+    width: 300px;
+    outline: none;
+}
+.display{
+    margin-bottom: 20px;
+    display: flex;
+}
+.display input {
+    text-align: right;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.58);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.98);
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+.buttons{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    align-items: center;
+}
+.btn{
+    padding: 15px 16px; 
+    border: none;  
+    background-color: rgb(183, 184, 193);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.7);
+    -moz-box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.7);
+    box-shadow: inset 0px 0px 2px 3px rgba(0,0,0,0.7);
+    font-weight: 500;
+    font-size: 15px;
+
+}
+.btn:hover{
+    background-color: rgb(153, 152, 152);
+    cursor: pointer;
+}
+#equal{
+    grid-column: span 2;
+}
+
+#clear{
+    background-color: rgb(255, 0, 0);
+}
+#clear:hover{
+    background-color: rgb(223, 0, 0);
+}
+#back{
+    background-color: blue;
+}
+#back:hover{
+    background-color: rgb(0, 0, 194);
+}
